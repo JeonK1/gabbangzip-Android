@@ -1,6 +1,5 @@
 package com.mashup.gabbangzip.sharedalbum.domain.model.event
 
-@JvmInline
-value class EventVisitDomainModel(
+data class EventVisitDomainModel(
     val isVisit: Boolean,
 )
