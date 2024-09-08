@@ -18,4 +18,8 @@ dependencies {
 
     // coroutine
     implementation(libs.coroutine.core)
+
+    // testing
+    testImplementation(libs.junit)
+    testImplementation(libs.mockk)
 }
