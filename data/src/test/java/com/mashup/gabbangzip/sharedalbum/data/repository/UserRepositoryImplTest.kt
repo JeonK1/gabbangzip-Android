@@ -17,6 +17,7 @@ class UserRepositoryImplTest {
 
     @Mock
     private lateinit var userService: UserService
+
     @Mock
     private lateinit var localDataSource: LocalDataSource
     private lateinit var userRepository: UserRepository
@@ -31,7 +32,7 @@ class UserRepositoryImplTest {
     fun `loadUserInfo received valid response`() {
         // Given
         `when`(localDataSource.loadUserInfo()).thenReturn(
-            UserInfoDomainModel("user_name")
+            UserInfoDomainModel("user_name"),
         )
         val expected = UserInfoDomainModel("user_name")
 

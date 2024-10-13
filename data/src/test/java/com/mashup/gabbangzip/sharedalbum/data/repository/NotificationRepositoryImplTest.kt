@@ -42,7 +42,7 @@ class NotificationRepositoryImplTest {
                     isSuccess = true,
                     data = FcmTokenResponse("registered_token"),
                     errorResponse = null,
-                )
+                ),
             )
         val expectedDomainModel = FcmTokenDomainModel("registered_token")
 
@@ -64,9 +64,9 @@ class NotificationRepositoryImplTest {
                     data = null,
                     errorResponse = PicErrorResponse(
                         code = "ErrorCode",
-                        message = "ErrorMessage"
+                        message = "ErrorMessage",
                     ),
-                )
+                ),
             )
 
         // When & Then
@@ -89,7 +89,7 @@ class NotificationRepositoryImplTest {
                     isSuccess = true,
                     data = FcmNotificationResponse(123),
                     errorResponse = null,
-                )
+                ),
             )
         val expectedDomainModel = FcmNotificationDomainModel(123)
 
@@ -110,7 +110,7 @@ class NotificationRepositoryImplTest {
                     isSuccess = false,
                     data = null,
                     errorResponse = null,
-                )
+                ),
             )
 
         // When & Then
